@@ -232,7 +232,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -330,6 +330,18 @@
     [
       "108d9b54-87bf-4732-a1b8-edcdb25241bc",
       "Oled Screen"
+    ],
+    [
+      "e865888c-a3d0-46cb-8bab-3f3f2de35235",
+      "Serial Programming circuit"
+    ],
+    [
+      "58c63ef9-40c4-473e-87ef-db433b58ea6c",
+      "Micro_SD"
+    ],
+    [
+      "2985c2dc-97fe-4379-8500-18b000a93b2c",
+      "Ethernet"
     ]
   ],
   "text_variables": {}

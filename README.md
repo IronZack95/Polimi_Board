@@ -20,3 +20,4 @@ The board is based on *STM32* chip - **[STM32F205RCT6](https://www.st.com/resour
 ## Usefull Links
 - [Big Board reference with Ram](https://github.com/HEAPLab/marco-ram-board/tree/master)
 - [Thermal camera project](https://github.com/fedetft/thermal_camera)
+- [How to connect micro SD](https://emanbuc.gitbooks.io/appunti-iot/content/manuscript/sd_card_connection.html)
