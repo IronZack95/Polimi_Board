@@ -333,7 +333,7 @@
     ],
     [
       "e865888c-a3d0-46cb-8bab-3f3f2de35235",
-      "Serial Programming circuit"
+      "USB Programming and OTP"
     ],
     [
       "58c63ef9-40c4-473e-87ef-db433b58ea6c",
@@ -342,6 +342,10 @@
     [
       "2985c2dc-97fe-4379-8500-18b000a93b2c",
       "Ethernet"
+    ],
+    [
+      "990208b4-3a85-48bd-85cd-d8da99c58ffe",
+      "GPIO"
     ]
   ],
   "text_variables": {}
