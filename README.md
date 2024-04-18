@@ -11,7 +11,7 @@ The board is based on *STM32* chip - **[STM32F205RCT6](https://www.st.com/resour
 - [x] 1x micro-SD Port
 - [x] 1x Ethernet Port, with magnetic transformer included, wired to **LAN8742** chip
 - [x] 1x reset button
-- [ ] 6x General buttons, 4 of them placed as a joystick cross, the others beside
+- [x] 6x General buttons, 4 of them placed as a joystick cross, the others beside
 - [ ] 1x power LED
 - [ ] 1x LED linked to a GPIO Port
 - [x] 1x OLED SCREEN I2C, [like](https://www.amazon.it/AZDelivery-Display-retroilluminato-Raspberry-gratuito/dp/B078J78R45?ref_=ast_sto_dp&th=1), or [like](https://www.ebay.it/itm/204428760352?itmmeta=01HQXT2FC1579AP9QA0BS3KWXZ&hash=item2f98e75520:g:HqMAAOSw8oZhO3MO)
