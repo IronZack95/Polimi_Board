@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP M95512-RMN6P
+D STMicroelectronics M95512-RMN6P EEPROM Memory Chip, 512kbit, 80ns, 1.8  5.5 V 8-Pin SOIC
+K
+F https://www.st.com/resource/en/datasheet/m95512-w.pdf
+$ENDCMP
+#
+#End Doc Library

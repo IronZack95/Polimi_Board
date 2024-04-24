@@ -1,0 +1,16 @@
+.M95512-RMN6P :1 ;STMicroelectronics M95512-RMN6P EEPROM Memory Chip, 512kbit, 80ns, 1.8  5.5 V 8-Pin SOIC
+SOIC127P600X175-8N
+*STM IC
+*NGS
+*PLB 1="'S'" 2="Q" 3="'W'" 4="VSS" 5="D" 6="C" 7="'HOLD'" 8="VCC"
+*MXP 8
+*DFN M95512-RMN6P
+~!Mouser Part Number (511-M95512-RMN6P)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/STMicroelectronics/M95512-RMN6P?qs=jZi1jxfVU95kyrSn89F2Zg%3D%3D)
+~!Manufacturer_Name (STMicroelectronics)
+~!Manufacturer_Part_Number (M95512-RMN6P)
+~!Link Datasheet (https://www.st.com/resource/en/datasheet/m95512-w.pdf)
+~!Height (1.75mm)
+~!3D_Model (M95512-RMN6P)
+M95512-RMN6P
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 
