@@ -6,8 +6,8 @@
 
   (title_block
     (title "Polimi Board ")
-    (date "2024-04-24")
-    (rev "1.0")
+    (date "2024-04-29")
+    (rev "2.0")
     (company "Politecnico di Milano")
     (comment 1 "Embedded Systems Project")
     (comment 2 "ing. Zaccaria Eliseo Carrettoni")

@@ -6,8 +6,8 @@
 
   (title_block
     (title "Polimi Board ")
-    (date "2024-04-24")
-    (rev "1.0")
+    (date "2024-04-29")
+    (rev "2.0")
     (company "Politecnico di Milano")
     (comment 1 "Embedded Systems Project")
     (comment 2 "ing. Zaccaria Eliseo Carrettoni")
@@ -1747,7 +1747,7 @@
     (uuid ff32743d-9c7c-4939-88f8-1f9f3f442e79)
   )
 
-  (text_box "MRII\nProtocol\n"
+  (text_box "RMII\nProtocol\n"
     (at 101.6 88.9 0) (size 12.7 16.51)
     (stroke (width 0) (type default))
     (fill (type none))
