@@ -33,6 +33,7 @@ The board is based on *STM32* chip - **[STM32F205RCT6](https://www.st.com/resour
 - Check power supplies module, it is taken from ARDUINO UNO Rev.3 as a reference design. Not shure it fits the project.
 - What is the utility of ferro bed in USB VBUS? It is needed?
 - Check if RS2232 in Self Powered Configuration is ok, or it must be another one from it's Datasheet.
+- Check the resent of all the chips.
 - Check all ports.
 
 
