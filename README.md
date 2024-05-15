@@ -27,7 +27,7 @@ The board is based on *STM32* chip - **[STM32F205RCT6](https://www.st.com/resour
 - As a primary source of power a normal jack is chosen then the USB one 
 
 # Potential problems
-- Is used the configuration of 
+- Is used the sower supply configuration from ARDUINO UNO Rev3
 
 # To be reviwed
 - Check power supplies module, it is taken from ARDUINO UNO Rev.3 as a reference design. Not shure it fits the project.
