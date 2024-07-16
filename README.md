@@ -30,11 +30,21 @@ The board is based on *STM32* chip - **[STM32F205RCT6](https://www.st.com/resour
 - Is used the sower supply configuration from ARDUINO UNO Rev3
 
 # To be reviwed
-- Check power supplies module, it is taken from ARDUINO UNO Rev.3 as a reference design. Not shure it fits the project.
-- What is the utility of ferro bed in USB VBUS? It is needed?
-- Check if RS2232 in Self Powered Configuration is ok, or it must be another one from it's Datasheet.
-- Check the resent of all the chips.
-- Check all ports.
+- [x] Secondo me non ci serve l'alimentazione tramite jack; quindi tutta la parte con l'LM358, l'interruttore e l'MCP1826 possono essere tolte. Nella marco-ram-board c'era il jack perché il consumo massimo teorico superava i 500mA limite per la porta USB, mentre nella tua board siamo ben sotto. La cosa che potrebbe servire per davvero è il jumper per scegliere l'alimentazione tra le due porte USB, e quello c'è già.
+
+- [x] I valori dei condensatori nella pagina Power non sono specificati. Considerato che arriva una tensione già filtrata dalla porta USB, dovrebbero bastare 47uF prima del regolatore e 10uF dopo il regolatore, magari degli elettrolitici. Poi quando scegli le footprint per gli elettrolitici, evita quelli SMD, hanno una sfortunata tendenza a perdere l'elettrolita e spargerlo in giro.
+
+- [x] L'FT2232D non è più in produzione ed è stato sostituito dall'FT2232HL che è uguale a parte che è USB 2 invece che USB 1.1. Purtroppo, a differenza dell'FT2232D, l'FT2232HL non funziona se non si collega un cristallo da 12MHz a OSCI/OSCO. Un vantaggio dell'FT2232HL è che è alimentato a 3V3 non a 5V, questo ti permette di dimezzare il valore dei condensatori di disaccoppiamento.
+
+- [x] Sempre sull'FT2232, se non viene usata una EEPROM bisognerebbe mettere un pullup sul pin EEDATA.
+
+- [x] Mi sfugge il perché c'è una resistenza da 100k sulla massa dell'USB OTG. Avrebbe senso per evitare ground loop, ma se alimentiamo la board anche da quella porta la 100k va a limitare la corrente di tutta la board, che è molto peggio. Toglierei la resistenza, e se ci sono dei ground loop amen, per della logica digitale non importa.
+
+- [x] Il connettore esterno per il JTAG ha senso da usare se non montiamo l'FT2232 (dato che costa ben 5$!), ma se non lo montiamo poi non c'è nessun connettore per la seriale. Andrebbe aggiunta una fila di header a passo 2.54mm con RXD, TXD, GND
+
+- [x] Nella pagina della Ethernet hai scritto "Baypass" invece di "Bypass" (c'è una "a" di troppo). Manca il valore, dovrebbe bastare 100n.
+
+- [x] Nella pagina GPIO il LED è collegato in un modo un po' bizzarro che rende difficile pilotarlo correttamente da software. Per accenderlo bisogna tenere flottante la GPIO, per spegnerlo bisogna portarla a massa. Alimenterei direttamente il LED dalla GPIO, tanto con una resistenza da 10k consumerà al massimo 0.2mA (considerando una caduta di tensione spannometrica sulla giunzione del led di 1.3V), che nello schema generale delle cose non è nulla.
 
 
 ## Usefull Links
