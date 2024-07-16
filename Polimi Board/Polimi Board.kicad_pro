@@ -177,7 +177,9 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "pin_to_pin|419100|1765300|5ff00092-e088-4ee0-9542-68316cb5197e|374a84a4-a9f7-4965-a702-4759e20bbe75|/319fe76e-1f98-44b3-99b0-af1a9ad7322c/e865888c-a3d0-46cb-8bab-3f3f2de35235|/319fe76e-1f98-44b3-99b0-af1a9ad7322c/e865888c-a3d0-46cb-8bab-3f3f2de35235|/319fe76e-1f98-44b3-99b0-af1a9ad7322c/e865888c-a3d0-46cb-8bab-3f3f2de35235"
+    ],
     "meta": {
       "version": 0
     },
@@ -457,6 +459,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
