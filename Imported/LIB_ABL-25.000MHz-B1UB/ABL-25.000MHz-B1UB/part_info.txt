@@ -1,0 +1,9 @@
+Manufacturer=ABRACON
+PartNumber=ABL-25.000MHz-B1UB
+PartCategory=Crystal or Oscillator
+PackageCategory=Other
+PinCount=2
+Version=2.4
+Released=2020-05-20 08:25:48
+Downloaded=2024-08-10 12:01:12
+3D=Y

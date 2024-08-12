@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'ABL_25.000MHz_B1UB'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "ABRACON", "ABL-25.000MHz-B1UB" (!) = "", "ABL25000MHzB1UB", "Other", "815-ABL-25-B1U", "https://www.mouser.co.uk/ProductDetail/ABRACON/ABL-25.000MHz-B1UB?qs=DZ%2FvJMgWWIsHsKf5%2FKBerg%3D%3D", "Crystals 25MHZ, 18pF Fund 10ppm -20C +70C HC/49US (AT49) MICROPROCESSOR CRYSTAL", "https://www.mouser.co.uk/datasheet/2/3/ABL-1774766.pdf"
+END_PART
+
+END.

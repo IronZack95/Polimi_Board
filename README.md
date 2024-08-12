@@ -27,7 +27,8 @@ The board is based on *STM32* chip - **[STM32F205RCT6](https://www.st.com/resour
 - As a primary source of power a normal jack is chosen then the USB one 
 
 # Potential problems
-- Is used the sower supply configuration from ARDUINO UNO Rev3
+- cambiati i simboli dei connettori RJ45, micro SD e mini USB
+- la micro SD non ha l'uscita WRITE PROTECT, è un problema? è stata essa con un pullup da 47k in HIGH a 3,3V
 
 # To be reviwed
 - [x] Secondo me non ci serve l'alimentazione tramite jack; quindi tutta la parte con l'LM358, l'interruttore e l'MCP1826 possono essere tolte. Nella marco-ram-board c'era il jack perché il consumo massimo teorico superava i 500mA limite per la porta USB, mentre nella tua board siamo ben sotto. La cosa che potrebbe servire per davvero è il jumper per scegliere l'alimentazione tra le due porte USB, e quello c'è già.
