@@ -1,4 +1,4 @@
-23140511351133850
+23142234870134787
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -87185,6 +87185,13 @@ rotary encoder
 7
 6
 SamacSys_Parts
+65100516121
+65100516121-4
+Connector
+0
+9
+9
+SamacSys_Parts
 ABL
 ABL
 Crystal or Oscillator
@@ -87235,7 +87242,7 @@ Integrated Circuit
 8
 SamacSys_Parts
 SOT230P700X180-4N
-SOT223
+DCY (R-PDSO-G4
 Integrated Circuit
 0
 4

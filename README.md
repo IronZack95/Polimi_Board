@@ -28,7 +28,8 @@ The board is based on *STM32* chip - **[STM32F205RCT6](https://www.st.com/resour
 
 # Potential problems
 - cambiati i simboli dei connettori RJ45, micro SD e mini USB
-- la micro SD non ha l'uscita WRITE PROTECT, è un problema? è stata essa con un pullup da 47k in HIGH a 3,3V
+- la micro SD non ha l'uscita WRITE PROTECT, è un problema? è stata scollegata 
+- microSD card detect è stato messo in corrispondenza di PC6 -> SDIO_D6
 
 # To be reviwed
 - [x] Secondo me non ci serve l'alimentazione tramite jack; quindi tutta la parte con l'LM358, l'interruttore e l'MCP1826 possono essere tolte. Nella marco-ram-board c'era il jack perché il consumo massimo teorico superava i 500mA limite per la porta USB, mentre nella tua board siamo ben sotto. La cosa che potrebbe servire per davvero è il jumper per scegliere l'alimentazione tra le due porte USB, e quello c'è già.
@@ -46,6 +47,9 @@ The board is based on *STM32* chip - **[STM32F205RCT6](https://www.st.com/resour
 - [x] Nella pagina della Ethernet hai scritto "Baypass" invece di "Bypass" (c'è una "a" di troppo). Manca il valore, dovrebbe bastare 100n.
 
 - [x] Nella pagina GPIO il LED è collegato in un modo un po' bizzarro che rende difficile pilotarlo correttamente da software. Per accenderlo bisogna tenere flottante la GPIO, per spegnerlo bisogna portarla a massa. Alimenterei direttamente il LED dalla GPIO, tanto con una resistenza da 10k consumerà al massimo 0.2mA (considerando una caduta di tensione spannometrica sulla giunzione del led di 1.3V), che nello schema generale delle cose non è nulla.
+
+## BOM - Mouser
+https://www.mouser.it/api/CrossDomain/GetContext?syncDomains=www&returnUrl=https%3a%2f%2fwww.mouser.com%2fProjectManager%2fProjectDetail.aspx%3fAccessID%3dec9a158a8f&async=False&setPrefSub=False&clearPrefSub=False
 
 
 ## Usefull Links

@@ -761,12 +761,6 @@
 		(uuid "4c22d111-d183-44b3-89e5-157b3c4dc8ba")
 	)
 	(junction
-		(at 124.46 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6962dbe8-4431-459d-864a-047f1c1f7682")
-	)
-	(junction
 		(at 120.65 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -958,16 +952,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 104.14) (xy 83.82 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "591cb23e-d6eb-4bdb-a058-8a3221940aa0")
-	)
-	(wire
-		(pts
 			(xy 193.04 66.04) (xy 201.93 66.04)
 		)
 		(stroke
@@ -1048,17 +1032,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 66.04) (xy 124.46 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9723af14-95c1-4c91-80be-a473e87fb350")
-	)
-	(wire
-		(pts
-			(xy 124.46 66.04) (xy 133.35 66.04)
+			(xy 120.65 66.04) (xy 133.35 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1088,7 +1062,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 96.52) (xy 142.24 96.52)
+			(xy 147.32 96.52) (xy 143.51 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1105,16 +1079,6 @@
 			(type default)
 		)
 		(uuid "b3895bd8-968a-41aa-b9aa-c4210a5ead38")
-	)
-	(wire
-		(pts
-			(xy 124.46 80.01) (xy 124.46 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9f43059-0cf8-4769-b433-2c0c99df979b")
 	)
 	(wire
 		(pts
@@ -1158,7 +1122,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 96.52) (xy 142.24 115.57)
+			(xy 143.51 96.52) (xy 143.51 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1208,16 +1172,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 66.04) (xy 124.46 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbce565d-20aa-4559-a9bf-c55aef77161e")
-	)
-	(wire
-		(pts
 			(xy 120.65 66.04) (xy 120.65 60.96)
 		)
 		(stroke
@@ -1226,9 +1180,9 @@
 		)
 		(uuid "fe95569d-9386-4088-9a14-840715be99a5")
 	)
-	(text_box "WP fixed on High with pull-up\n"
+	(text_box "WP not present in microSD\n\n"
 		(exclude_from_sim no)
-		(at 48.26 101.6 0)
+		(at 200.66 88.9 0)
 		(size 19.05 6.35)
 		(stroke
 			(width 0)
@@ -1256,18 +1210,6 @@
 			(justify right)
 		)
 		(uuid "01753e45-cc4c-4db9-a6d3-f05c6a7301b6")
-	)
-	(hierarchical_label "SDMMC_WP"
-		(shape input)
-		(at 83.82 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3be40520-0034-4eda-93c1-ca4f4a0c83ec")
 	)
 	(hierarchical_label "SDMMC_CK"
 		(shape input)
@@ -1343,7 +1285,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 115.57 0)
+		(at 143.51 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1352,7 +1294,7 @@
 		(fields_autoplaced yes)
 		(uuid "2816ce99-b070-4a50-b061-eb746dcf1f19")
 		(property "Reference" "#PWR050"
-			(at 142.24 121.92 0)
+			(at 143.51 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1361,7 +1303,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 120.65 0)
+			(at 143.51 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1369,7 +1311,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 115.57 0)
+			(at 143.51 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1378,7 +1320,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 115.57 0)
+			(at 143.51 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1387,7 +1329,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 142.24 115.57 0)
+			(at 143.51 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1612,76 +1554,6 @@
 			(project "Polimi Board"
 				(path "/319fe76e-1f98-44b3-99b0-af1a9ad7322c/58c63ef9-40c4-473e-87ef-db433b58ea6c"
 					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 124.46 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ddef1a5-7e51-4751-8755-fe1480d90b65")
-		(property "Reference" "R13"
-			(at 127 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47k"
-			(at 127 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 122.682 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d6ab68b3-c0c4-4509-9726-102df5e362ff")
-		)
-		(pin "1"
-			(uuid "49c532ad-4fbf-4d1a-944e-8174d34258b9")
-		)
-		(instances
-			(project "Polimi Board"
-				(path "/319fe76e-1f98-44b3-99b0-af1a9ad7322c/58c63ef9-40c4-473e-87ef-db433b58ea6c"
-					(reference "R13")
 					(unit 1)
 				)
 			)
