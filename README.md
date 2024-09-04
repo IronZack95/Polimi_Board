@@ -32,21 +32,23 @@ The board is based on *STM32* chip - **[STM32F205RCT6](https://www.st.com/resour
 - microSD card detect è stato messo in corrispondenza di PC6 -> SDIO_D6
 
 # To be reviwed
-- [x] Secondo me non ci serve l'alimentazione tramite jack; quindi tutta la parte con l'LM358, l'interruttore e l'MCP1826 possono essere tolte. Nella marco-ram-board c'era il jack perché il consumo massimo teorico superava i 500mA limite per la porta USB, mentre nella tua board siamo ben sotto. La cosa che potrebbe servire per davvero è il jumper per scegliere l'alimentazione tra le due porte USB, e quello c'è già.
+ - [x] La footprint del cristallo da 25 MHz è sbagliata, la distanza tra i pin è 4.15mm invece che 4.88. Dovrebbe essere uguale a quella del cristallo da 12 MHz che invece è giusta.
+- [x] Puoi togliere dalla BOM l'STM32 perché li abbiamo già in abbondanza
+- [x] Per i led si può scendere col prezzo: ad esempio un led verde da 0.15$ invece che 0.3: https://www.mouser.it/ProductDetail/Wurth-Elektronik/151031VS06000?qs=LlUlMxKIyB01ggED1iKswA%3D%3D
+- [x] Idem per i condensatori; questi da 100nF (0.1uF) costano solo 0.093€ l'uno: https://www.mouser.it/ProductDetail/KYOCERA-AVX/06033G104ZAT2A?qs=NXubJDmysXJMPmHfVo6Z%252BA%3D%3D
+Ricorda di ordinare per prezzo (e filtra solo per i componenti in stock al momento) quando cerchi i componenti e specialmente per i passivi prendi sempre le cose meno costose (finchè sono in specifica per quanto riguarda voltaggio (potenza per le resistenze) e valore del componente).
+In generale tutti i passivi mi sembrano più costosi del necessario.
+- [x] Condensatore da 47uF: hai scelto un condensatore ai polimeri, costano ma a parte che non hanno la tendenza di sputare fuori l'elettrolita hanno caratteristiche generalmente *peggiori* dei condensatori elettrolitici normali. Per gli elettrolitici è preferibile prendere quelli through hole "vecchio stile", con una tensione di lavoro/temperatura massima sovradimensionata. Per esempio questi condensatori da 47uF della Panasonic https://www.mouser.it/ProductDetail/Panasonic/EEU-EB1J470S?qs=ctSfcQVnnmTBOdyC1HlWZw%3D%3D non costano nulla (0.26€ cadauno) e hanno una durata di esercizio di ben 5000 ore e una tensione max di lavoro di 63V e una temperatura massima di 105°C. Nella nostra applicazione è perfettamente equivalente al condensatore ai polimeri (anzi l'unica differenza sostanziale è che il condensatore ai polimeri andava fino a 100V, cosa che non ci serve) ma costa 1/10 del prezzo.
+- [ ] i chip vanno bene, i connettori vanno bene, riguarda tutti i passivi e cerca di scendere coi prezzi. Ho guardato principalmente i condensatori ma non escludo che si possa scendere di prezzo anche con le resistenze.
+- [ ] Mi sembra che manca il connettore IDC per il JTAG e le strip da 2.54mm per jumper e breakout vari. Il connettore IDC lo possiamo lasciare fuori dalla BOM perché non credo ci servirà e i connettori costano.
+- [ ] Per le strip da 2.54mm ti consiglio questa serie: https://www.mouser.it/c/?tradename=EconoStik Attenzione a selezionare nel filtro le seguenti proprietà, altrimenti le misure del connettore saranno sbagliate:
+- Termination Post Length: 3.05mm
+- Mating Post Length: 5.84mm
 
-- [x] I valori dei condensatori nella pagina Power non sono specificati. Considerato che arriva una tensione già filtrata dalla porta USB, dovrebbero bastare 47uF prima del regolatore e 10uF dopo il regolatore, magari degli elettrolitici. Poi quando scegli le footprint per gli elettrolitici, evita quelli SMD, hanno una sfortunata tendenza a perdere l'elettrolita e spargerlo in giro.
-
-- [x] L'FT2232D non è più in produzione ed è stato sostituito dall'FT2232HL che è uguale a parte che è USB 2 invece che USB 1.1. Purtroppo, a differenza dell'FT2232D, l'FT2232HL non funziona se non si collega un cristallo da 12MHz a OSCI/OSCO. Un vantaggio dell'FT2232HL è che è alimentato a 3V3 non a 5V, questo ti permette di dimezzare il valore dei condensatori di disaccoppiamento.
-
-- [x] Sempre sull'FT2232, se non viene usata una EEPROM bisognerebbe mettere un pullup sul pin EEDATA.
-
-- [x] Mi sfugge il perché c'è una resistenza da 100k sulla massa dell'USB OTG. Avrebbe senso per evitare ground loop, ma se alimentiamo la board anche da quella porta la 100k va a limitare la corrente di tutta la board, che è molto peggio. Toglierei la resistenza, e se ci sono dei ground loop amen, per della logica digitale non importa.
-
-- [x] Il connettore esterno per il JTAG ha senso da usare se non montiamo l'FT2232 (dato che costa ben 5$!), ma se non lo montiamo poi non c'è nessun connettore per la seriale. Andrebbe aggiunta una fila di header a passo 2.54mm con RXD, TXD, GND
-
-- [x] Nella pagina della Ethernet hai scritto "Baypass" invece di "Bypass" (c'è una "a" di troppo). Manca il valore, dovrebbe bastare 100n.
-
-- [x] Nella pagina GPIO il LED è collegato in un modo un po' bizzarro che rende difficile pilotarlo correttamente da software. Per accenderlo bisogna tenere flottante la GPIO, per spegnerlo bisogna portarla a massa. Alimenterei direttamente il LED dalla GPIO, tanto con una resistenza da 10k consumerà al massimo 0.2mA (considerando una caduta di tensione spannometrica sulla giunzione del led di 1.3V), che nello schema generale delle cose non è nulla.
+Commenti vari sul layout:
+- [ ] I connettori USB posizionali bene in modo che l'estremità del connettore (quella suggerita dal silkscreen) arrivi a toccare il bordo della scheda, altrimenti non sarà possibile infilare la spina nel connettore senza che il corpo della spina ostruisca l'inserimento.
+- [ ] Idem come sopra per il connettore Ethernet. Le sagome di ingombro della libreria di KiCad (quelle che compaiono col bordo rosa) sono estremamente conservative; non farti problemi a farle intersecare un po' se lo ritieni necessario.
+- [ ] Le dimensioni della scheda sembrano un po' abbondanti, magari si può scorciare un pochino verticalmente (tipo 60mmx100mm invece che 100x100)
 
 ## BOM - Mouser
 https://www.mouser.it/api/CrossDomain/GetContext?syncDomains=www&returnUrl=https%3a%2f%2fwww.mouser.com%2fProjectManager%2fProjectDetail.aspx%3fAccessID%3dec9a158a8f&async=False&setPrefSub=False&clearPrefSub=False
