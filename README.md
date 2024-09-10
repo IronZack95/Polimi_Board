@@ -1,10 +1,10 @@
 # Polimi_Board
 Design of new board for **Politecnico di Milano** Univeristy. \
 This project is for the Embedded Systems course.
-![alt text](https://github.com/IronZack95/Polimi_Board/blob/main/Render/Polimi%20Board%20Front_quote.png)
+![alt text](https://github.com/IronZack95/Polimi_Board/blob/main/Render/back%20zoom%20raytracing%202.png)
 ## Description
 The board is based on *STM32* chip - **[STM32F205RCT6](https://www.st.com/resource/en/datasheet/stm32f205rb.pdf)** as a main core.
-![alt text](https://github.com/IronZack95/Polimi_Board/blob/main/Render/back%20zoom%20raytracing.png)
+![alt text](https://github.com/IronZack95/Polimi_Board/blob/main/Render/Polimi%20Board%20Front_quote.png)
 # Board Design specifications
 - [x] 1x [specific main core chip](https://estore.st.com/en/stm32f205rct6-cpn.html)
 - [x] 1x micro-USB B Port, directly connencted to the main chip.
