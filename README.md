@@ -1,12 +1,10 @@
 # Polimi_Board
 Design of new board for **Politecnico di Milano** Univeristy. \
 This project is for the Embedded Systems course.
-
-![alt text](https://eccmr.org/wp-content/uploads/2021/11/Polimi-logo-colours.jpg)
-
+![alt text](https://github.com/IronZack95/Polimi_Board/blob/main/Render/Polimi%20Board%20Front_quote.png)
 ## Description
 The board is based on *STM32* chip - **[STM32F205RCT6](https://www.st.com/resource/en/datasheet/stm32f205rb.pdf)** as a main core.
-
+![alt text](https://github.com/IronZack95/Polimi_Board/blob/main/Render/back%20zoom%20raytracing.png)
 # Board Design specifications
 - [x] 1x [specific main core chip](https://estore.st.com/en/stm32f205rct6-cpn.html)
 - [x] 1x micro-USB B Port, directly connencted to the main chip.
@@ -23,8 +21,13 @@ The board is based on *STM32* chip - **[STM32F205RCT6](https://www.st.com/resour
 
 # Notes
 - Jumpers are introduced to choose the direction of the USB OTG, in one case HS (High speed) and in one case FS (Full speed)
--  Jumpers are introduced to choose power from USB OTG and USB Programming
-- As a primary source of power a normal jack is chosen then the USB one 
+- Jumpers are introduced to choose power from USB OTG and USB Programming
+- The primary source of power arrives from USB
+- Board size **10cm x 7cm**
+- Hole distances **6cm x 9cm**
+
+## BOM - Mouser
+https://www.mouser.it/api/CrossDomain/GetContext?syncDomains=www&returnUrl=https%3a%2f%2fwww.mouser.com%2fProjectManager%2fProjectDetail.aspx%3fAccessID%3dec9a158a8f&async=False&setPrefSub=False&clearPrefSub=False
 
 # Potential problems
 - cambiati i simboli dei connettori RJ45, micro SD e mini USB
@@ -49,10 +52,6 @@ Commenti vari sul layout:
 - [x] I connettori USB posizionali bene in modo che l'estremità del connettore (quella suggerita dal silkscreen) arrivi a toccare il bordo della scheda, altrimenti non sarà possibile infilare la spina nel connettore senza che il corpo della spina ostruisca l'inserimento.
 - [x] Idem come sopra per il connettore Ethernet. Le sagome di ingombro della libreria di KiCad (quelle che compaiono col bordo rosa) sono estremamente conservative; non farti problemi a farle intersecare un po' se lo ritieni necessario.
 - [x] Le dimensioni della scheda sembrano un po' abbondanti, magari si può scorciare un pochino verticalmente (tipo 60mmx100mm invece che 100x100)
-
-## BOM - Mouser
-https://www.mouser.it/api/CrossDomain/GetContext?syncDomains=www&returnUrl=https%3a%2f%2fwww.mouser.com%2fProjectManager%2fProjectDetail.aspx%3fAccessID%3dec9a158a8f&async=False&setPrefSub=False&clearPrefSub=False
-
 
 ## Usefull Links
 - [Big Board reference with Ram](https://github.com/HEAPLab/marco-ram-board/tree/master)
