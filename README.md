@@ -16,7 +16,7 @@ The board is based on *STM32* chip - **[STM32F205RCT6](https://www.st.com/resour
 - [x] 1x power LED
 - [x] 1x JTAG interface
 - [x] 1x LED linked to a GPIO Port
-- [x] 1x [OLED SCREEN I2C](https://www.az-delivery.de/it/products/0-96zolldisplay)
+- [x] 1x [OLED SCREEN I2C AMAZON](https://www.amazon.it/AZDelivery-Display-retroilluminato-Raspberry-gratuito/dp/B078J78R45?ref_=ast_sto_dp&th=1), or [OLED SCREEN I2C AZ-DELIVERY](https://www.az-delivery.de/it/products/1-3zoll-i2c-oled-display)
 - [x] 1x External Flash SPI chip
 
 # Notes
@@ -44,7 +44,7 @@ In generale tutti i passivi mi sembrano più costosi del necessario.
 - [x] Condensatore da 47uF: hai scelto un condensatore ai polimeri, costano ma a parte che non hanno la tendenza di sputare fuori l'elettrolita hanno caratteristiche generalmente *peggiori* dei condensatori elettrolitici normali. Per gli elettrolitici è preferibile prendere quelli through hole "vecchio stile", con una tensione di lavoro/temperatura massima sovradimensionata. Per esempio questi condensatori da 47uF della Panasonic https://www.mouser.it/ProductDetail/Panasonic/EEU-EB1J470S?qs=ctSfcQVnnmTBOdyC1HlWZw%3D%3D non costano nulla (0.26€ cadauno) e hanno una durata di esercizio di ben 5000 ore e una tensione max di lavoro di 63V e una temperatura massima di 105°C. Nella nostra applicazione è perfettamente equivalente al condensatore ai polimeri (anzi l'unica differenza sostanziale è che il condensatore ai polimeri andava fino a 100V, cosa che non ci serve) ma costa 1/10 del prezzo.
 - [x] i chip vanno bene, i connettori vanno bene, riguarda tutti i passivi e cerca di scendere coi prezzi. Ho guardato principalmente i condensatori ma non escludo che si possa scendere di prezzo anche con le resistenze.
 - [x] Mi sembra che manca il connettore IDC per il JTAG e le strip da 2.54mm per jumper e breakout vari. Il connettore IDC lo possiamo lasciare fuori dalla BOM perché non credo ci servirà e i connettori costano.
-- [ ] Per le strip da 2.54mm ti consiglio questa serie: https://www.mouser.it/c/?tradename=EconoStik Attenzione a selezionare nel filtro le seguenti proprietà, altrimenti le misure del connettore saranno sbagliate:
+- [x] Per le strip da 2.54mm ti consiglio questa serie: https://www.mouser.it/c/?tradename=EconoStik Attenzione a selezionare nel filtro le seguenti proprietà, altrimenti le misure del connettore saranno sbagliate:
 - Termination Post Length: 3.05mm
 - Mating Post Length: 5.84mm
 
@@ -57,4 +57,4 @@ Commenti vari sul layout:
 - [Big Board reference with Ram](https://github.com/HEAPLab/marco-ram-board/tree/master)
 - [Thermal camera project](https://github.com/fedetft/thermal_camera)
 - [How to connect micro SD](https://emanbuc.gitbooks.io/appunti-iot/content/manuscript/sd_card_connection.html)
-- [Oled alternatives](https://www.amazon.it/AZDelivery-Display-retroilluminato-Raspberry-gratuito/dp/B078J78R45?ref_=ast_sto_dp&th=1), or [like](https://www.ebay.it/itm/204428760352?itmmeta=01HQXT2FC1579AP9QA0BS3KWXZ&hash=item2f98e75520:g:HqMAAOSw8oZhO3MO)
+- [Oled alternatives](https://www.az-delivery.de/it/products/0-96zolldisplay), or [like](https://www.ebay.it/itm/204428760352?itmmeta=01HQXT2FC1579AP9QA0BS3KWXZ&hash=item2f98e75520:g:HqMAAOSw8oZhO3MO) (NOT USED!!)
