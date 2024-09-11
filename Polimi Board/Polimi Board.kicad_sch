@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Polimi Board ")
-		(date "2024-07-16")
+		(date "2024-09-11")
 		(rev "2.0")
 		(company "Politecnico di Milano")
 		(comment 1 "Embedded Systems Project")
@@ -3032,6 +3032,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 29.21) (xy 247.65 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26ba5020-01dd-4fb2-9970-c817aff64fe4")
+	)
+	(wire
+		(pts
 			(xy 116.84 93.98) (xy 121.92 93.98)
 		)
 		(stroke
@@ -3189,6 +3199,16 @@
 			(type default)
 		)
 		(uuid "3be506c3-1bbd-45a6-bc11-89eb2ee31be9")
+	)
+	(wire
+		(pts
+			(xy 245.11 31.75) (xy 247.65 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f12ff16-39bc-4039-8656-b586a249823c")
 	)
 	(wire
 		(pts
@@ -3992,16 +4012,6 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 31.75) (xy 247.65 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac5d54d2-ae8a-4c79-95c8-04455da835bf")
-	)
-	(wire
-		(pts
 			(xy 71.12 46.99) (xy 115.57 46.99)
 		)
 		(stroke
@@ -4329,16 +4339,6 @@
 			(type default)
 		)
 		(uuid "d8a28a79-3700-4f28-a1d4-20c6359ec57f")
-	)
-	(wire
-		(pts
-			(xy 245.11 29.21) (xy 247.65 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da75bcc5-34f0-48a7-b375-4f2a1335f8d6")
 	)
 	(wire
 		(pts
@@ -4911,7 +4911,7 @@
 		(uuid "137e7fa0-12bf-4e8f-866c-bfa122fa1d93")
 	)
 	(label "Oled_SCL_I2C"
-		(at 245.11 29.21 180)
+		(at 245.11 31.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5087,7 +5087,7 @@
 		(uuid "45f9ea76-f3ae-4b5b-a957-339e172e2629")
 	)
 	(label "Oled_SDA_I2C"
-		(at 245.11 31.75 180)
+		(at 245.11 29.21 180)
 		(fields_autoplaced yes)
 		(effects
 			(font

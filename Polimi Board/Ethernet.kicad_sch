@@ -1161,7 +1161,7 @@
 				)
 			)
 		)
-		(symbol "power:+3V3"
+		(symbol "power:+3.3V"
 			(power)
 			(pin_names
 				(offset 0)
@@ -1178,7 +1178,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+3V3"
+			(property "Value" "+3.3V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -1204,7 +1204,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1222,7 +1222,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3V3_0_1"
+			(symbol "+3.3V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -1260,11 +1260,11 @@
 					)
 				)
 			)
-			(symbol "+3V3_1_1"
+			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0) hide
-					(name "+3V3"
+					(name "+3.3V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1775,6 +1775,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 69.85) (xy 236.22 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09f8cf46-248a-4dd1-9999-f009677e0799")
+	)
+	(wire
+		(pts
 			(xy 219.71 123.19) (xy 219.71 115.57)
 		)
 		(stroke
@@ -1955,6 +1965,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 33.02) (xy 217.17 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e51b118-9879-452d-99d6-e7f8e10875e4")
+	)
+	(wire
+		(pts
 			(xy 219.71 130.81) (xy 219.71 139.7)
 		)
 		(stroke
@@ -2085,7 +2105,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 58.42) (xy 148.59 59.69)
+			(xy 148.59 57.15) (xy 148.59 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2132,16 +2152,6 @@
 			(type default)
 		)
 		(uuid "71a6fbee-332e-47cb-9a17-7d1079306d4a")
-	)
-	(wire
-		(pts
-			(xy 236.22 71.12) (xy 236.22 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71c2a978-d233-4003-9e5e-9ad5e0813a09")
 	)
 	(wire
 		(pts
@@ -2402,6 +2412,16 @@
 			(type default)
 		)
 		(uuid "e0912dd0-6fdb-439c-abdd-aad158334837")
+	)
+	(wire
+		(pts
+			(xy 217.17 58.42) (xy 217.17 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1622b97-3bb1-4209-8830-7c74e838fbe0")
 	)
 	(wire
 		(pts
@@ -2995,6 +3015,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 41.91 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3884df82-f646-4784-b5d4-399ffb3b3118")
+		(property "Reference" "#PWR090"
+			(at 41.91 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 41.91 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 41.91 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10337d98-599c-4613-8afd-00ff76c9f38d")
+		)
+		(instances
+			(project "Polimi Board"
+				(path "/319fe76e-1f98-44b3-99b0-af1a9ad7322c/2985c2dc-97fe-4379-8500-18b000a93b2c"
+					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 85.09 97.79 90)
 		(unit 1)
@@ -3333,6 +3419,72 @@
 			(project "Polimi Board"
 				(path "/319fe76e-1f98-44b3-99b0-af1a9ad7322c/2985c2dc-97fe-4379-8500-18b000a93b2c"
 					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 217.17 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c90239d-4be5-4f1f-b01c-2faeda20e9c6")
+		(property "Reference" "#PWR064"
+			(at 217.17 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 217.17 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 217.17 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a91899ac-67b7-4938-914c-ccd707fa6d33")
+		)
+		(instances
+			(project "Polimi Board"
+				(path "/319fe76e-1f98-44b3-99b0-af1a9ad7322c/2985c2dc-97fe-4379-8500-18b000a93b2c"
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -3695,72 +3847,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 148.59 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "62f651f5-df2f-4fd1-a6f0-6f071e1f6a80")
-		(property "Reference" "#PWR057"
-			(at 148.59 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 148.59 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 148.59 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 148.59 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0be51016-0adc-4f1d-8db5-3fa8836104c2")
-		)
-		(instances
-			(project "Polimi Board"
-				(path "/319fe76e-1f98-44b3-99b0-af1a9ad7322c/2985c2dc-97fe-4379-8500-18b000a93b2c"
-					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 241.3 78.74 0)
 		(unit 1)
@@ -3825,6 +3911,72 @@
 			(project "Polimi Board"
 				(path "/319fe76e-1f98-44b3-99b0-af1a9ad7322c/2985c2dc-97fe-4379-8500-18b000a93b2c"
 					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 148.59 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "711ea28d-a4c5-480d-861c-cc637b557f42")
+		(property "Reference" "#PWR057"
+			(at 148.59 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 148.59 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 148.59 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c1f36320-6130-4585-b550-d3c5d83b4735")
+		)
+		(instances
+			(project "Polimi Board"
+				(path "/319fe76e-1f98-44b3-99b0-af1a9ad7322c/2985c2dc-97fe-4379-8500-18b000a93b2c"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -3963,17 +4115,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 236.22 71.12 0)
+		(lib_id "power:+3.3V")
+		(at 217.17 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7560a48f-1117-4017-9112-acf0d7cd5a34")
-		(property "Reference" "#PWR067"
-			(at 236.22 74.93 0)
+		(uuid "76ede6b5-4af6-48c7-aeb3-f58fdc3cad69")
+		(property "Reference" "#PWR065"
+			(at 217.17 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3981,8 +4133,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 236.22 66.04 0)
+		(property "Value" "+3.3V"
+			(at 217.17 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3990,7 +4142,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 236.22 71.12 0)
+			(at 217.17 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3999,7 +4151,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 71.12 0)
+			(at 217.17 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4008,7 +4160,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 236.22 71.12 0)
+			(at 217.17 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4017,12 +4169,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "96e36477-fda4-4582-b8a1-a50ae77ef44a")
+			(uuid "ba361c52-8a8e-4291-a7cd-089b8303af3b")
 		)
 		(instances
 			(project "Polimi Board"
 				(path "/319fe76e-1f98-44b3-99b0-af1a9ad7322c/2985c2dc-97fe-4379-8500-18b000a93b2c"
-					(reference "#PWR067")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -4846,72 +4998,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 217.17 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bb4b6393-b4fc-4111-882a-ea6f8cb4b02d")
-		(property "Reference" "#PWR064"
-			(at 217.17 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 217.17 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 217.17 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 217.17 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 217.17 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "29215441-9ec8-478a-bc31-43de5580e198")
-		)
-		(instances
-			(project "Polimi Board"
-				(path "/319fe76e-1f98-44b3-99b0-af1a9ad7322c/2985c2dc-97fe-4379-8500-18b000a93b2c"
-					(reference "#PWR064")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 250.19 78.74 0)
 		(unit 1)
@@ -4982,17 +5068,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 41.91 82.55 0)
+		(lib_id "power:+3.3V")
+		(at 236.22 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cb10844a-b109-4df7-a9e1-448edfdc8e4f")
+		(uuid "c9c157e1-12d6-4950-8866-7289557f3b67")
 		(property "Reference" "#PWR051"
-			(at 41.91 86.36 0)
+			(at 236.22 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5000,8 +5086,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 41.91 77.47 0)
+		(property "Value" "+3.3V"
+			(at 236.22 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5009,7 +5095,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 82.55 0)
+			(at 236.22 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5018,7 +5104,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 82.55 0)
+			(at 236.22 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5027,7 +5113,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 41.91 82.55 0)
+			(at 236.22 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5036,78 +5122,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f9050bfc-b6ff-44e9-9cf9-2ca77428a320")
+			(uuid "13bba008-5eaa-4d08-b543-e420a977af90")
 		)
 		(instances
 			(project "Polimi Board"
 				(path "/319fe76e-1f98-44b3-99b0-af1a9ad7322c/2985c2dc-97fe-4379-8500-18b000a93b2c"
 					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 217.17 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc3b5e21-4151-4b67-9a32-e8d681f6c378")
-		(property "Reference" "#PWR065"
-			(at 217.17 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 217.17 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 217.17 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 217.17 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 217.17 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7854e5b8-e9ff-4b20-a43b-9e82115d6a76")
-		)
-		(instances
-			(project "Polimi Board"
-				(path "/319fe76e-1f98-44b3-99b0-af1a9ad7322c/2985c2dc-97fe-4379-8500-18b000a93b2c"
-					(reference "#PWR065")
 					(unit 1)
 				)
 			)
